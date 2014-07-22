@@ -1,0 +1,143 @@
+body
+  text-align center
+  height 100%
+  color white
+  background-color gray
+  font-family georgia
+  width 100%
+
+.none
+  display none
+
+#container
+  position absolute
+  left 40%
+  top 25%
+
+#icons
+  margin-top 75px
+  list-style-type none
+
+li
+  float left
+  left 100px
+  margin-right 10px
+  -webkit-animation slideLeft 0.25s
+  animation slideLeft 0.25s
+
+li:nth-child(1)
+  -webkit-animation-delay 0.7s
+  animation-delay 0.7s
+
+li:nth-child(2)
+  -webkit-animation-delay 0.8s
+  animation-delay 0.8s
+
+li:nth-child(3)
+  -webkit-animation-delay 0.9s
+  animation-delay 0.9s
+
+li:nth-child(4)
+  -webkit-animation-delay 1s
+  animation-delay 1s
+
+h1
+  white-space nowrap
+  position absolute
+  top 0
+
+#fromLeft
+  -webkit-animation moveRight 1s ease
+  animation moveRight 1s ease
+
+@-webkit-keyframes moveRight
+  0%
+    opacity 0
+    transform translateX(-10px)
+  100%
+    opacity 1
+    transform translateX(0px)
+
+@keyframes moveRight
+  0%
+    opacity 0
+    transform translateX(-10px)
+  100%
+    opacity 1
+    transform translateX(0px)
+
+#fromRight
+  -webkit-animation moveLeft 1s ease
+  animation moveLeft 1s ease
+
+@-webkit-keyframes moveLeft
+  0%
+    opacity 0
+    transform translateX(10px)
+  100%
+    opacity 1
+    transform translateX(0px)
+
+@keyframes moveLeft
+  0%
+    opacity 0
+    transform translateX(10px)
+  100%
+    opacity 1
+    transform translateX(0px)
+
+#fromBottom
+  -webkit-animation moveUp 1s ease
+  animation moveUp 1s ease
+
+@-webkit-keyframes moveUp
+  0%
+    opacity 0
+    transform translateY(10px)
+  100%
+    opacity 1
+    transform translateY(0px)
+
+@keyframes moveUp
+  0%
+    opacity 0
+    transform translateY(10px)
+  100%
+    opacity 1
+    transform translateY(0px)
+
+#fromTop
+  -webkit-animation moveDown 1s ease
+  animation moveDown 1s ease
+
+@-webkit-keyframes moveDown
+  0%
+    opacity 0
+    transform translateY(-10px)
+  100%
+    opacity 1
+    transform translateY(0px)
+
+@keyframes moveDown
+  0%
+    opacity 0
+    transform translateY(-10px)
+  100%
+    opacity 1
+    transform translateY(0px)
+
+@-webkit-keyframes slideLeft
+  from
+    opacity 0
+    transform translateX(100px)
+  to
+    opacity 1
+    transform translateX(0px)
+
+@keyframes slideLeft
+  from
+    opacity 0
+    transform translateX(100px)
+  to
+    opacity 1
+    transform translateX(0px)
