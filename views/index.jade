@@ -4,16 +4,25 @@ extend layout
 block styles
     link(rel="stylesheet", href="stylesheets/style.css")
 block content
-    div#container
-        div#names
-            h1#fromLeft.disappearAfterAnimation Shaun Katona
-            h1#fromRight.disappearAfterAnimation Shaun Katona
-            h1#fromTop.disappearAfterAnimation Shaun Katona
-            h1#fromBottom Shaun Katona
+    #container
+        h1 Shaun Katona
+        p
+            | Web developer in Boulder, CO
         ul#icons
-            li.invisible one
-            li.invisible two
-            li.invisible three
-            li.invisible four
+            li.invisible
+                a(href="http://www.linkedin.com/pub/shaun-katona/29/913/836", target="_BLANK")
+                    | linkedin
+            li.invisible
+                a(href="https://github.com/shaunkatona", target="_BLANK")
+                    | github
+            li.invisible
+                a(href="/resume")
+                    | resume
+            li.invisible
+                a(href="/projects")
+                    | projects
+            li.invisible
+                a(href="/blog")
+                    | blog
 block scripts
     script(type="text/javascript", src="scripts/main.js")
