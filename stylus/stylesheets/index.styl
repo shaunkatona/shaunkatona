@@ -1,7 +1,6 @@
 body
   text-align center
   height 100%
-  color white
   background -webkit-radial-gradient(#444444, #111111); /* Safari 5.1 to 6.0 */
   background -o-radial-gradient(#444444, #111111); /* For Opera 11.6 to 12.0 */
   background -moz-radial-gradient(#444444, #111111); /* For Firefox 3.6 to 15 */
@@ -12,12 +11,19 @@ body
 #container
   position relative
   width 100%
-  top 30%
+  top 20%
+
+  a
+    text-decoration none
 
   h1
     font-size 70px
     -webkit-animation fadeIn 3s
     animation fadeIn 3s
+    color white
+
+  h2
+    color white
 
   p
     font-size 18px
@@ -25,8 +31,8 @@ body
     animation colorFade 3s
     color orange
 
-  ul
-    margin-top 50px
+  ul#menu
+    margin-top 30px
     list-style-type none
 
     li
@@ -51,10 +57,6 @@ body
     li:nth-child(4)
       -webkit-animation-delay 1.3s
       animation-delay 1.3s
-
-    li:nth-child(5)
-      -webkit-animation-delay 1.4s
-      animation-delay 1.4s
 
 @-webkit-keyframes colorFade
   from

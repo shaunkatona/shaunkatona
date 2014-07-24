@@ -26,4 +26,9 @@ app.get('/', function (req, res) {
     res.render("index.jade");
 });
 
+app.get('/projects', function (req, res) {
+    res.render("projects.jade");
+});
+
+// pass in a port for at home, otherwise AWS auto-runs on port 80
 app.listen(process.argv[2] || 80);

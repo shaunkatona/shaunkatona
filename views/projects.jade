@@ -1,12 +1,12 @@
 //
-   Created by shaunkatona on 7/21/14.
+   Created by shaunkatona on 7/23/14.
+
 extend layout
 block styles
     link(rel="stylesheet", href="stylesheets/index.css")
 block content
-    #container
-        h1
-            | Shaun Katona
+    #container.secondary
+        h1 Shaun Katona
         p
             | Web developer in Boulder, CO
         ul#menu
@@ -22,5 +22,18 @@ block content
             li.invisible
                 a(href="/projects")
                     | projects
+        h2 Projects
+        .panel.panel-default
+            .panel-body
+                h3 ShaunKatona.com
+                    ul
+                        li NodeJS
+                        li Express
+                        li Stylus
+                        li Jade
+                        li Bootstrap
+                        li jQuery
+                        li Amazon Web Services
+                    .screencap | screenshot
 block scripts
     script(type="text/javascript", src="scripts/index.js")
