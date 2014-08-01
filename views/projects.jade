@@ -4,6 +4,7 @@
 extend layout
 block styles
     link(rel="stylesheet", href="stylesheets/index.css")
+    link(rel="stylesheet", href="stylesheets/projects.css")
 block content
     #container.secondary
         h1 Shaun Katona
@@ -22,18 +23,54 @@ block content
             li.invisible
                 a(href="/projects")
                     | projects
-        h2 Projects
-        .panel.panel-default
-            .panel-body
-                h3 ShaunKatona.com
-                    ul
-                        li NodeJS
-                        li Express
-                        li Stylus
-                        li Jade
-                        li Bootstrap
-                        li jQuery
-                        li Amazon Web Services
-                    .screencap | screenshot
+        .row
+            .col-md-6.col-md-offset-3
+                h2 Projects
+                .panel.panel-default
+                    .panel-body
+                        h3 ShaunKatona.com
+                            .row
+                                .col-md-3
+                                    ul.text-left
+                                        li NodeJS
+                                        li Express
+                                        li Stylus
+                                        li Jade
+                                        li Bootstrap
+                                        li jQuery
+                                        li Amazon Web Services
+                                .col-md-3.pull-right
+                                    .screencap screenshot
+                .panel.panel-default
+                    .panel-body
+                        h3 Fantasy Football Draft Tool
+                            .row
+                                .col-md-3
+                                    ul.text-left
+                                        li NodeJS
+                                        li Express
+                                        li Stylus
+                                        li Jade
+                                        li Bootstrap
+                                        li AngularJS
+                                        li Amazon Web Services
+                                .col-md-3.pull-right
+                                    .screencap screenshot
+                .panel.panel-default
+                    .panel-body
+                        h3 Pros v Cons
+                            .row
+                                .col-md-3
+                                    ul.text-left
+                                        li NodeJS
+                                        li Express
+                                        li Stylus
+                                        li Jade
+                                        li Bootstrap
+                                        li AngularJS
+                                        li MongoDB
+                                        li Amazon Web Services
+                                .col-md-3.pull-right
+                                    .screencap screenshot
 block scripts
     script(type="text/javascript", src="scripts/index.js")
