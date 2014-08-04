@@ -1,0 +1,27 @@
+{
+  "name": "shaunkatona",
+  "version": "0.0.0",
+  "description": "personal site",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.6.1",
+    "stylus": "^0.47.2",
+    "jade": "^1.4.2",
+    "nib": "^1.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shaunkatona/shaunkatona.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shaunkatona/shaunkatona/issues"
+  },
+  "homepage": "https://github.com/shaunkatona/shaunkatona"
+}
